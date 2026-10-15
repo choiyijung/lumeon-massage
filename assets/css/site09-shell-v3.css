@@ -1,0 +1,711 @@
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body.s9x-main,
+body.s9x-special{
+  margin:0;
+  padding:0 0 86px;
+
+  font-family:Arial,"Noto Sans KR",sans-serif;
+
+  --ink:#181817;
+  --cream:#f5f1e8;
+  --paper:#fffdf7;
+  --wine:#7c2032;
+  --wine-deep:#591520;
+  --stone:#77716a;
+  --line:#ccc3b4;
+
+  background:var(--cream);
+  color:var(--ink);
+}
+
+a{
+  color:inherit;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.s9x-header{
+  background:#181817;
+  color:#fffdf7;
+  border-bottom:5px solid var(--wine);
+}
+
+.s9x-shell{
+  width:min(1120px,calc(100% - 40px));
+  margin:0 auto;
+}
+
+.s9x-header-inner{
+  min-height:88px;
+
+  display:grid;
+  grid-template-columns:74px 1fr auto;
+  align-items:center;
+  gap:24px;
+}
+
+.s9x-mark{
+  height:52px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid #eee4d6;
+
+  font-family:Georgia,serif;
+  font-size:24px;
+  font-weight:700;
+}
+
+.s9x-brand .ry-brand{
+  color:#fffdf7!important;
+  text-decoration:none!important;
+  font-size:20px!important;
+  font-weight:900!important;
+}
+
+.s9x-nav{
+  display:flex;
+  gap:28px;
+}
+
+.s9x-nav a{
+  color:#d6cdbf;
+  text-decoration:none;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.14em;
+}
+
+
+/* =========================
+   HERO ? NEW STRUCTURE
+   ========================= */
+
+.s9x-hero{
+  padding:56px 0 76px;
+}
+
+.s9x-hero-heading{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  column-gap:42px;
+  align-items:start;
+
+  padding-bottom:32px;
+}
+
+.s9x-kicker{
+  padding-top:12px;
+
+  color:var(--wine);
+
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+.s9x-hero h1{
+  margin:0!important;
+
+  max-width:850px;
+
+  color:var(--ink)!important;
+
+  font-family:Georgia,"Noto Serif KR",serif!important;
+  font-size:clamp(46px,6.4vw,88px)!important;
+  line-height:1.02!important;
+  letter-spacing:-.065em!important;
+  font-weight:500!important;
+
+  word-break:keep-all!important;
+}
+
+.s9x-hero-rule{
+  grid-column:2;
+
+  width:100%;
+  height:1px;
+
+  margin:28px 0 20px;
+
+  background:var(--ink);
+}
+
+.s9x-hero-note{
+  grid-column:2;
+
+  max-width:720px;
+
+  color:#69635c;
+
+  font-size:15px;
+  line-height:1.85;
+}
+
+.s9x-panorama{
+  position:relative;
+
+  width:100%;
+  height:440px;
+
+  overflow:hidden;
+
+  background:#222;
+}
+
+.s9x-panorama .metro-hero-photo{
+  display:block!important;
+
+  width:100%!important;
+  height:100%!important;
+
+  object-fit:cover!important;
+  border-radius:0!important;
+
+  filter:saturate(.72) contrast(1.05);
+}
+
+.s9x-panorama::after{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(17,17,16,.15),
+      transparent 45%,
+      rgba(17,17,16,.35)
+    );
+
+  pointer-events:none;
+}
+
+.s9x-panorama-label{
+  position:absolute;
+  left:0;
+  bottom:0;
+  z-index:2;
+
+  width:min(560px,70%);
+
+  padding:22px 28px;
+
+  background:var(--wine);
+
+  color:#fff!important;
+
+  font-size:14px;
+  font-weight:800;
+  line-height:1.7;
+}
+
+.s9x-panorama-label *{
+  color:#fff!important;
+}
+
+.s9x-panorama-no{
+  position:absolute;
+  right:28px;
+  top:18px;
+  z-index:2;
+
+  color:#fff;
+
+  font-family:Georgia,serif;
+  font-size:92px;
+  line-height:1;
+  opacity:.9;
+}
+
+.s9x-crumb{
+  padding-top:14px;
+
+  color:#847b71;
+
+  font-size:11px;
+}
+
+.s9x-crumb .breadcrumb{
+  color:#847b71!important;
+}
+
+
+/* =========================
+   SECTION HEAD
+   ========================= */
+
+.s9x-region-section,
+.s9x-company-section,
+.s9x-existing{
+  padding:72px 0;
+}
+
+.s9x-company-section{
+  background:#e8e1d6;
+}
+
+.s9x-section-title{
+  display:grid;
+  grid-template-columns:78px 1fr;
+  align-items:end;
+
+  margin-bottom:30px;
+
+  border-bottom:1px solid var(--ink);
+  padding-bottom:18px;
+}
+
+.s9x-section-title > span{
+  color:var(--wine);
+
+  font-family:Georgia,serif;
+  font-size:42px;
+  line-height:1;
+}
+
+.s9x-section-title small{
+  display:block;
+
+  margin-bottom:6px;
+
+  color:#777068;
+
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.18em;
+}
+
+.s9x-section-title h2{
+  margin:0;
+
+  font-family:Georgia,"Noto Serif KR",serif;
+  font-size:34px;
+  font-weight:500;
+}
+
+
+/* =========================
+   REGION ? FLAT EDITORIAL
+   ========================= */
+
+.s9x-region-section .region-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  gap:0!important;
+
+  border-top:1px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+}
+
+.s9x-region-section .region-card{
+  min-height:180px!important;
+
+  padding:30px 26px!important;
+
+  background:transparent!important;
+
+  border:0!important;
+  border-right:1px solid var(--ink)!important;
+  border-radius:0!important;
+
+  box-shadow:none!important;
+
+  color:var(--ink)!important;
+  text-decoration:none!important;
+}
+
+.s9x-region-section .region-card:last-child{
+  border-right:0!important;
+}
+
+.s9x-region-section .region-card:hover{
+  background:var(--wine)!important;
+  color:#fff!important;
+}
+
+.s9x-region-section .region-card:hover *{
+  color:#fff!important;
+}
+
+
+/* =========================
+   COMPANY ? 2 COLUMN
+   ========================= */
+
+.s9x-company-section .company-grid{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:18px!important;
+}
+
+.s9x-company-section .company-card{
+  position:relative!important;
+
+  min-width:0!important;
+  min-height:285px!important;
+
+  padding:34px!important;
+
+  background:var(--paper)!important;
+
+  border:1px solid var(--ink)!important;
+  border-radius:0!important;
+
+  box-shadow:none!important;
+
+  color:var(--ink)!important;
+}
+
+/* 5??? ?? */
+.s9x-company-section .company-card:nth-child(5){
+  grid-column:auto!important;
+  width:auto!important;
+  max-width:none!important;
+}
+
+.s9x-company-section .ry-rank{
+  position:absolute!important;
+  right:24px!important;
+  top:22px!important;
+
+  width:auto!important;
+  height:auto!important;
+
+  background:transparent!important;
+
+  color:var(--wine)!important;
+
+  font-family:Georgia,serif!important;
+  font-size:34px!important;
+  font-weight:500!important;
+}
+
+.s9x-company-section .company-name{
+  padding-right:54px!important;
+
+  color:var(--ink)!important;
+
+  font-family:Georgia,"Noto Serif KR",serif!important;
+  font-size:27px!important;
+  font-weight:700!important;
+}
+
+.s9x-company-section .company-sub{
+  margin-top:18px!important;
+
+  color:#6c665f!important;
+
+  line-height:1.75!important;
+}
+
+.s9x-company-section .company-actions{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:0!important;
+
+  margin-top:30px!important;
+
+  border:1px solid var(--ink)!important;
+}
+
+.s9x-company-section .company-actions a{
+  min-height:52px!important;
+
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+
+  border:0!important;
+  border-radius:0!important;
+
+  text-decoration:none!important;
+
+  font-size:14px!important;
+  font-weight:900!important;
+}
+
+.s9x-company-section .company-actions .call{
+  background:var(--ink)!important;
+
+  color:#fff!important;
+}
+
+.s9x-company-section .company-actions .sms{
+  background:var(--paper)!important;
+
+  color:var(--ink)!important;
+
+  border-left:1px solid var(--ink)!important;
+}
+
+
+/* =========================
+   EXISTING CONTENT
+   ========================= */
+
+.s9x-existing{
+  background:var(--paper);
+}
+
+.s9x-existing > .s9x-shell > *{
+  margin:0 0 30px!important;
+
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+
+.s9x-existing .ry-reservation{
+  background:var(--wine)!important;
+  color:#fff!important;
+}
+
+.s9x-existing .editorial,
+.s9x-existing .section-soft,
+.s9x-existing .metro-local-800,
+.s9x-existing .ry-longtext{
+  background:#f1ece3!important;
+
+  border:1px solid #cfc4b5!important;
+
+  color:#292624!important;
+}
+
+
+/* =========================
+   FLOAT CONTACT
+   ========================= */
+
+body.s9x-main .juju-float-contact,
+body.s9x-special .juju-float-contact{
+  position:fixed!important;
+
+  left:50%!important;
+  bottom:14px!important;
+
+  transform:translateX(-50%)!important;
+
+  z-index:99999!important;
+
+  width:min(620px,calc(100% - 24px))!important;
+
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:0!important;
+
+  padding:6px!important;
+
+  background:#181817!important;
+
+  border:0!important;
+  border-radius:0!important;
+
+  box-shadow:0 15px 40px rgba(0,0,0,.24)!important;
+}
+
+body.s9x-main .juju-float-call,
+body.s9x-special .juju-float-call,
+body.s9x-main .juju-float-sms,
+body.s9x-special .juju-float-sms{
+  min-height:48px!important;
+
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+
+  border-radius:0!important;
+
+  font-weight:900!important;
+  text-decoration:none!important;
+}
+
+body.s9x-main .juju-float-call,
+body.s9x-special .juju-float-call{
+  background:#fffdf7!important;
+  color:#181817!important;
+}
+
+body.s9x-main .juju-float-sms,
+body.s9x-special .juju-float-sms{
+  background:var(--wine)!important;
+  color:#fff!important;
+}
+
+
+/* =========================
+   SPECIAL
+   ========================= */
+
+body.s9x-special{
+  --ink:#f1e9dc;
+  --cream:#181716;
+  --paper:#272321;
+  --wine:#a44252;
+  --stone:#aaa096;
+  --line:#584f48;
+
+  background:#181716;
+  color:#f1e9dc;
+}
+
+body.s9x-special .s9x-header{
+  background:#050505;
+  border-bottom-color:#a44252;
+}
+
+body.s9x-special .s9x-hero h1,
+body.s9x-special .s9x-section-title h2{
+  color:#f4ecdf!important;
+}
+
+body.s9x-special .s9x-hero-rule,
+body.s9x-special .s9x-section-title{
+  border-color:#6e6259!important;
+}
+
+body.s9x-special .s9x-hero-rule{
+  background:#6e6259!important;
+}
+
+body.s9x-special .s9x-hero-note{
+  color:#bdb3a9;
+}
+
+body.s9x-special .s9x-region-section .region-grid{
+  border-color:#655b54!important;
+}
+
+body.s9x-special .s9x-region-section .region-card{
+  border-color:#655b54!important;
+  color:#eee6da!important;
+}
+
+body.s9x-special .s9x-company-section{
+  background:#211e1c;
+}
+
+body.s9x-special .s9x-company-section .company-card{
+  background:#292522!important;
+  border-color:#655b54!important;
+  color:#f1e9dc!important;
+}
+
+body.s9x-special .company-name{
+  color:#fff4e8!important;
+}
+
+body.s9x-special .company-sub{
+  color:#bdb4ab!important;
+}
+
+body.s9x-special .company-actions{
+  border-color:#70645b!important;
+}
+
+body.s9x-special .company-actions .call{
+  background:#ede4d6!important;
+  color:#191716!important;
+}
+
+body.s9x-special .company-actions .sms{
+  background:#a44252!important;
+  color:#fff!important;
+  border-color:#70645b!important;
+}
+
+body.s9x-special .s9x-existing{
+  background:#181716;
+}
+
+body.s9x-special .s9x-existing .editorial,
+body.s9x-special .s9x-existing .section-soft,
+body.s9x-special .s9x-existing .metro-local-800,
+body.s9x-special .s9x-existing .ry-longtext{
+  background:#292522!important;
+  border-color:#5f554e!important;
+  color:#ddd4ca!important;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:760px){
+
+  .s9x-shell{
+    width:min(100% - 22px,1120px);
+  }
+
+  .s9x-header-inner{
+    grid-template-columns:54px 1fr;
+  }
+
+  .s9x-nav{
+    display:none;
+  }
+
+  .s9x-hero{
+    padding-top:36px;
+  }
+
+  .s9x-hero-heading{
+    grid-template-columns:1fr;
+  }
+
+  .s9x-kicker{
+    margin-bottom:18px;
+  }
+
+  .s9x-hero-rule,
+  .s9x-hero-note{
+    grid-column:1;
+  }
+
+  .s9x-hero h1{
+    font-size:44px!important;
+  }
+
+  .s9x-panorama{
+    height:310px;
+  }
+
+  .s9x-panorama-label{
+    width:92%;
+  }
+
+  .s9x-panorama-no{
+    font-size:56px;
+  }
+
+  .s9x-region-section .region-grid{
+    grid-template-columns:1fr!important;
+  }
+
+  .s9x-region-section .region-card{
+    border-right:0!important;
+    border-bottom:1px solid var(--ink)!important;
+  }
+
+  .s9x-company-section .company-grid{
+    grid-template-columns:1fr!important;
+  }
+
+  .s9x-company-section .company-card:nth-child(5){
+    grid-column:auto!important;
+  }
+}

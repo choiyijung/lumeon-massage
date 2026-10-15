@@ -1,0 +1,293 @@
+
+/* ==================================================
+   SITE-09 REGION V3
+   approved editorial shell + original region content
+   ================================================== */
+
+body.s9x-main .s9x-existing,
+body.s9x-special .s9x-existing{
+  padding:72px 0 110px!important;
+}
+
+/* region links */
+
+body.s9x-main .region-links,
+body.s9x-special .region-links{
+  margin:0 0 28px!important;
+  padding:34px!important;
+
+  background:var(--paper)!important;
+  border:1px solid var(--ink)!important;
+  border-radius:0!important;
+
+  box-shadow:none!important;
+}
+
+body.s9x-main .region-head,
+body.s9x-special .region-head{
+  margin-bottom:24px!important;
+
+  color:var(--ink)!important;
+
+  font-family:Georgia,"Noto Serif KR",serif!important;
+  font-size:27px!important;
+  font-weight:700!important;
+}
+
+body.s9x-main .region-link-grid,
+body.s9x-special .region-link-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:1px!important;
+
+  background:var(--ink)!important;
+
+  border:1px solid var(--ink)!important;
+}
+
+body.s9x-main .region-link,
+body.s9x-special .region-link{
+  min-height:48px!important;
+
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+
+  padding:10px 14px!important;
+
+  background:var(--paper)!important;
+
+  color:var(--ink)!important;
+
+  text-decoration:none!important;
+  text-align:center!important;
+
+  font-size:13px!important;
+  font-weight:800!important;
+}
+
+body.s9x-main .region-link:hover,
+body.s9x-special .region-link:hover{
+  background:var(--wine)!important;
+  color:#fff!important;
+}
+
+
+/* map */
+
+body.s9x-main .map-section,
+body.s9x-special .map-section{
+  margin:0 0 28px!important;
+  padding:34px!important;
+
+  background:#e9e2d7!important;
+  border:1px solid #bfb4a5!important;
+  border-radius:0!important;
+
+  box-shadow:none!important;
+}
+
+body.s9x-main .map-head,
+body.s9x-special .map-head{
+  margin-bottom:20px!important;
+
+  color:#201d1a!important;
+
+  font-family:Georgia,"Noto Serif KR",serif!important;
+  font-size:25px!important;
+  font-weight:700!important;
+}
+
+body.s9x-main .map-box,
+body.s9x-special .map-box{
+  padding:24px!important;
+
+  background:#fffdf7!important;
+  border:1px solid #bfb4a5!important;
+  border-radius:0!important;
+
+  color:#514a44!important;
+
+  line-height:1.8!important;
+}
+
+
+/* reservation */
+
+body.s9x-main .reserve,
+body.s9x-special .reserve{
+  margin:0 0 28px!important;
+  padding:34px!important;
+
+  background:var(--wine)!important;
+  border:0!important;
+  border-radius:0!important;
+
+  color:#fff!important;
+
+  box-shadow:none!important;
+}
+
+body.s9x-main .reserve *,
+body.s9x-special .reserve *{
+  color:#fff!important;
+}
+
+
+/* long bottom regional content */
+
+body.s9x-main .juju-text-bottom,
+body.s9x-special .juju-text-bottom{
+  margin:0!important;
+  padding:38px!important;
+
+  background:var(--paper)!important;
+
+  border:1px solid var(--ink)!important;
+  border-radius:0!important;
+
+  color:var(--ink)!important;
+
+  box-shadow:none!important;
+}
+
+body.s9x-main .juju-text-bottom *,
+body.s9x-special .juju-text-bottom *{
+  box-shadow:none!important;
+}
+
+body.s9x-main .juju-text-label,
+body.s9x-special .juju-text-label{
+  color:var(--wine)!important;
+  font-weight:900!important;
+}
+
+body.s9x-main .juju-text-copy,
+body.s9x-main .juju-text-article,
+body.s9x-special .juju-text-copy,
+body.s9x-special .juju-text-article{
+  color:inherit!important;
+  line-height:1.9!important;
+}
+
+
+/* region floating contact */
+
+body.s9x-main .juju-float-contact,
+body.s9x-special .juju-float-contact{
+  position:fixed!important;
+  left:50%!important;
+  bottom:14px!important;
+
+  transform:translateX(-50%)!important;
+
+  z-index:99999!important;
+
+  width:min(620px,calc(100% - 24px))!important;
+
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:0!important;
+
+  padding:6px!important;
+
+  background:#181817!important;
+
+  border:0!important;
+  border-radius:0!important;
+
+  box-shadow:0 15px 40px rgba(0,0,0,.24)!important;
+}
+
+body.s9x-main .juju-float-contact .juju-call,
+body.s9x-main .juju-float-contact .juju-sms,
+body.s9x-special .juju-float-contact .juju-call,
+body.s9x-special .juju-float-contact .juju-sms{
+  min-height:48px!important;
+
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+
+  margin:0!important;
+  padding:10px 16px!important;
+
+  border:0!important;
+  border-radius:0!important;
+
+  text-align:center!important;
+  text-decoration:none!important;
+  font-weight:900!important;
+}
+
+body.s9x-main .juju-float-contact .juju-call,
+body.s9x-special .juju-float-contact .juju-call{
+  background:#fffdf7!important;
+  color:#181817!important;
+}
+
+body.s9x-main .juju-float-contact .juju-sms,
+body.s9x-special .juju-float-contact .juju-sms{
+  background:var(--wine)!important;
+  color:#fff!important;
+}
+
+
+/* SPECIAL regional lower area */
+
+body.s9x-special .region-links,
+body.s9x-special .juju-text-bottom{
+  background:#292522!important;
+  border-color:#655b54!important;
+  color:#eee6da!important;
+}
+
+body.s9x-special .region-head,
+body.s9x-special .juju-text-bottom{
+  color:#eee6da!important;
+}
+
+body.s9x-special .region-link-grid{
+  background:#655b54!important;
+  border-color:#655b54!important;
+}
+
+body.s9x-special .region-link{
+  background:#292522!important;
+  color:#eee6da!important;
+}
+
+body.s9x-special .map-section{
+  background:#211e1c!important;
+  border-color:#655b54!important;
+}
+
+body.s9x-special .map-head{
+  color:#eee6da!important;
+}
+
+body.s9x-special .map-box{
+  background:#292522!important;
+  border-color:#655b54!important;
+  color:#c9beb3!important;
+}
+
+
+@media(max-width:760px){
+
+  body.s9x-main .region-links,
+  body.s9x-main .map-section,
+  body.s9x-main .reserve,
+  body.s9x-main .juju-text-bottom,
+  body.s9x-special .region-links,
+  body.s9x-special .map-section,
+  body.s9x-special .reserve,
+  body.s9x-special .juju-text-bottom{
+    padding:24px 18px!important;
+  }
+
+  body.s9x-main .region-link-grid,
+  body.s9x-special .region-link-grid{
+    grid-template-columns:1fr 1fr!important;
+  }
+}
